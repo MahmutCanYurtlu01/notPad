@@ -1,0 +1,111 @@
+body {
+    background-color: #1e1e1e; /* Koyu gri arka plan */
+    color: #32cd32; /* Daha yumuşak bir yeşil (limegreen) */
+    font-family: 'Courier New', Courier, monospace; /* Monospace yazı stili */
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #32cd32; /* Yeşil çerçeve */
+    border-radius: 8px;
+    background-color: #2b2b2b; /* Hafif daha açık bir gri arka plan */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32; /* Parlayan efekt */
+}
+
+.notInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #32cd32; /* Yeşil çerçeve */
+    background: #1e1e1e; /* Koyu gri */
+    color: #32cd32; /* Yeşil yazı */
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #32cd32;
+}
+
+.notInput::placeholder {
+    color: #32cd32; /* Placeholder yeşil */
+    opacity: 0.7;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    background: #2b2b2b; /* Hafif daha açık gri arka plan */
+    color: #32cd32; /* Yumuşak yeşil yazı */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #32cd32; /* Yeşil çerçeve */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 5px #32cd32;
+    
+}
+.complate
+{  
+    text-decoration: line-through;
+    
+}
+
+li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #32cd32, 0 0 15px #32cd32;
+}
+span
+{
+    font-size:18px ;
+}
+
+span i {
+    font-style: normal;
+    margin-right: 10px; /* İkon ile metin arasında boşluk */
+    color: #32cd32; /* İkonun rengi */
+    font-size: 1.2rem; /* İkon boyutu */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+span i:hover {
+    color: #00ff00; /* Daha parlak yeşil */
+    transform: rotate(15deg); /* Hafif döndürme efekti */
+}
+
+
+
+
+/* Responsive Tasarım */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .notInput {
+        font-size: 0.9rem;
+    }
+    li {
+        padding: 8px 10px;
+    }
+    span {
+        font-size:0.9rem ;
+    }
+}
